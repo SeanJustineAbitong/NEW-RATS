@@ -5,9 +5,8 @@ body {
 h1 {
   font-family: Comic Sans MS
   padding: 70px;
- margin: auto;
+  margin: auto;
   width: 60%;
-  border: 3px solid #73AD21;
 }
 
 .h1center {
