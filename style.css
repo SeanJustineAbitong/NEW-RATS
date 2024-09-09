@@ -3,13 +3,17 @@ body {
 }
 
 h1 {
-  font-family: Comic Sans MS
-  padding: 70px;
-  margin: auto;
-  width: 60%;
+font-family: Comic Sans MS
+padding: 70px;
+margin: auto;
+width: 60%;
 }
+
+.div-button {
+  border: 3px solid #73AD21;
+}
+  
 
 .h1center {
   text-align: center
-  
 }
