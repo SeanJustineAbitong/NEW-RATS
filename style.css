@@ -11,9 +11,11 @@ width: 60%;
 
 .div-button {
   padding-left: 360px;
+  padding-bottom: 360px;
+  text-align: center;
 }
   
 
 .h1center {
-  text-align: center
+  text-align: center;
 }
