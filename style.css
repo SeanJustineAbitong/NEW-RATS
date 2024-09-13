@@ -1,19 +1,30 @@
 body {
-  background-color: cyan
+  background-color: cyan;
 }
 
 h1 {
 font-family: Comic Sans MS
-padding: 70px;
+padding: auto;
 margin: auto;
-width: 60%;
 }
 
-.div-button {
-  padding: 360px;
-  text-align: center;
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 250px 690px;
+  cursor: pointer;
+  font-family: Comic Sans MS;
+  font-weight: bold
 }
-  
+
+.button:hover {
+  background-image: url("https://img.freepik.com/premium-vector/abstract-technology-blue-circuit-board-pattern-background_501557-609.jpg");
+}
 
 .h1center {
   text-align: center;
