@@ -9,13 +9,13 @@ margin: auto;
 text-align: center;
 }
 
-button {
+.button {
  font-family: Comic Sans MS;
  font-weight: bold;
  background-color: black;
  color: white;
- margin: 250px;
- border: 50%;
+ margin: 100px;
+ border: 60%;
  padding: 15px 35px;
 }
 
