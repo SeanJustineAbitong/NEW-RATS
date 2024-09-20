@@ -1,33 +1,74 @@
 body {
+font-family: Comic Sans MS;
 background-color: cyan;
 background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210127/pngtree-blue-black-abstract-technology-circuit-background-image_541440.jpg");
-background-size: 700px;
 background-position: center;
-background-repeat: no-repeat, repeat;
+background-size: 700px;
+background-repeat: no-repeat repeat;
 }
 
 .h1center {
-font-family: Comic Sans MS;
 padding: auto;
 margin: auto;
 text-align: center;
 color: white;
+animation: glitch 5s 5s infinite;
+}
+
+glitch::before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: -5px 0 magenta;
+  background: black;
+  overflow: hidden;
+  top: 0;
+  animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+}
+
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -5px 0 lightgreen;
+  background: black;
+  overflow: hidden;
+  top: 0;
+  animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
+}
+
+@keyframes glitch { 
+  1%{
+    transform: rotateX(10deg) skewX(90deg);
+  }
+  2%{
+    transform: rotateX(0deg) skewX(0deg);
+  }
 }
 
 .button {
+ font-size: 15px;
  font-family: Comic Sans MS;
  font-weight: bold;
  background-color: black;
- color: white;
+ color: gray;
  margin: 100px;
- border: 60%;
- padding: 15px 50px;
+ padding: 25px 50px;
 }
 
-button:hover {
+.button:hover {
   cursor: pointer;
   background-image: url("https://img.freepik.com/premium-vector/abstract-technology-blue-circuit-board-pattern-background_501557-609.jpg");
   border-color: white;
+  color: white;
+  transition: 0.5s;
+}
+
+
+.button:active {
+  box-shadow: 0 5px black;
+  transform: translateY(4px);
+  transition: 1s;
 }
 
 .h1center {
