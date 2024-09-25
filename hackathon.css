@@ -1,1 +1,51 @@
+body {
+  overflow: hidden;
+}
 
+#game {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: #ADD8E6;
+}
+
+#score {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  height: 0px;
+  width: 0px;
+  font-family: sans-serif;
+  font-size: 80px;
+  color: white;
+  text-shadow: 2px 2px black;
+  text-align: center;
+  line-height: 0px;
+}
+
+#reset {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  width: 300px;
+  margin-left: -150px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 45px;
+  color: white;
+  text-shadow: 2px 2px black;
+  visibility: hidden;
+  font-weight: heavy;
+  animation: blinker .5s ease-in-out infinite alternate;
+}
+
+@keyframes blinker {
+  from {
+    font-size: 45px;
+  }
+  to {
+    font-size: 55px;
+  }t
+}
