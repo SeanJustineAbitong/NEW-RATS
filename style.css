@@ -102,4 +102,9 @@ h3 {
   font-size: 20px;
 }
 
+.pa {
+  color: white;
+  animation: glitch 5s 5s infinite;
+}
+
 
