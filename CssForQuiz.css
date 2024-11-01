@@ -1,8 +1,13 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: Comic Sans MS;
   font-size: 16px;
   background-color: cyan;
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210127/pngtree-blue-black-abstract-technology-circuit-background-image_541440.jpg");
+background-position: center;
+background-size: 1300px ;
+background-repeat: no-repeat repeat;
 }
+
 form{
   margin-top:20px;
 }
@@ -10,14 +15,19 @@ form{
   width: 80%;
   margin: 0 auto;
 }
-h1 {
-  text-align: center;
+.h1center {
+text-align: center;
+padding: auto;
+margin: auto;
+color: white;
+animation: glitch 5s 5s infinite;
 }
 .question {
   width:45%;
   margin-bottom: 20px;
   background-color: #fff;
   padding:20px;
+  border: 5px solid cyan;
 }
 .question:nth-child(odd){
   margin-right:5%;
@@ -61,4 +71,35 @@ input[type="radio"] {
 }
 .d-flex{
   display: flex;
+}
+
+glitch::before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: -5px 0 magenta;
+  background: black;
+  overflow: hidden;
+  top: 0;
+  animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+}
+
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -5px 0 lightgreen;
+  background: black;
+  overflow: hidden;
+  top: 0;
+  animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
+}
+
+@keyframes glitch { 
+  1%{
+    transform: rotateX(10deg) skewX(90deg);
+  }
+  2%{
+    transform: rotateX(0deg) skewX(0deg);
+  }
 }
