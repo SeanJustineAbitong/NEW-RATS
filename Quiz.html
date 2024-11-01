@@ -1,14 +1,19 @@
 
 <div class="quiz-container">
+  <head>
+    <title>C.I.G Quiz</title>
+     <link rel="stylesheet" type="text/css" href="CssForQuiz.css"/>
+     <link rel="icon" type="image/x-icon" href="https://static.thenounproject.com/png/6528691-200.png">
+    <script src="script.js"JavaForQuiz.js></script>
+  </head>
 
-  <body>
-  <link rel="stylesheet" href="CssForQuiz.css">
-</body>
-  
-  <h1>Multiple Choice Quiz</h1>
+  <h1 class="h1center" class="glitch">
+  <u>Transient Trivia (Multiple Choice Quiz)</u>
+  </h1>
   <hr>
   <form id="quiz-form">
     <div class="d-flex">
+      
       <div class="question">
         <p>1. What allows you to make decisions based on conditions?</p>
         <div class="answers">
@@ -53,15 +58,14 @@
         </div>
       </div>
       
-           
+ 
+      
     </div>
+    
     <button type="submit" class="submit-btn">Submit</button>
   </form>
   
   <div class="result" id="result"></div>
-</div>
-</div>
-
 
 <script>
   const quizForm = document.getElementById('quiz-form');
