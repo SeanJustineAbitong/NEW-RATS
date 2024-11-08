@@ -1,5 +1,6 @@
  <header>
     <h1>Floppy Bird</h1>
+  <link rel="stylesheet" type="text/css" href="css birb"/>
     <div class="score-container">
       <div id="bestScore"></div>
       <div id="currentScore"></div>
