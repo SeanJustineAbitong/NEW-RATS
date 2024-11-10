@@ -13,7 +13,7 @@ form{
 }
 .quiz-container {
   width: 80%;
-  margin: 0 auto;
+  margin: auto;
 }
 .h1center {
 text-align: center;
@@ -23,14 +23,15 @@ color: white;
 animation: glitch 5s 5s infinite;
 }
 .question {
-  width:45%;
+  width: 45%;
   margin-bottom: 20px;
   background-color: #fff;
-  padding:20px;
+  padding: auto;
   border: 5px solid cyan;
 }
 .question:nth-child(odd){
   margin-right:5%;
+  margin-left:5%;
 }
 .question p{
   font-weight: bold;
@@ -102,4 +103,34 @@ glitch::before {
   2%{
     transform: rotateX(0deg) skewX(0deg);
   }
+}
+
+.button {
+ font-size: 15px;
+ font-family: Comic Sans MS;
+ font-weight: bold;
+ background-color: black;
+ color: gray;
+ margin: 50px;
+ padding: 25px 50px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-image: url("https://img.freepik.com/premium-vector/abstract-technology-blue-circuit-board-pattern-background_501557-609.jpg");
+  border-color: white;
+  color: white;
+  transition: 0.5s;
+}
+
+
+.button:active {
+  box-shadow: 0 5px black;
+  transform: translateY(4px);
+  transition: 1s;
+}
+
+#container {
+  text-align: center;
+}
 }
