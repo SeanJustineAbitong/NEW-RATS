@@ -1,17 +1,21 @@
-
 <div class="quiz-container">
   <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width"/>
     <title>C.I.G Quiz</title>
      <link rel="stylesheet" type="text/css" href="CssForQuiz.css"/>
      <link rel="icon" type="image/x-icon" href="https://static.thenounproject.com/png/6528691-200.png">
     <script src="script.js"JavaForQuiz.js></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <h1 class="h1center" class="glitch">
-  <u>Transient Trivia (Multiple Choice Quiz)</u>
+  <u>Transient Trivia (Multiple Choice Quiz)</u> 
   </h1>
+  <i class="fa fa-info-circle" style="font-size:60px"></i>
   <hr>
   <form id="quiz-form">
+    
     <div class="d-flex">
       
       <div class="question">
@@ -37,7 +41,7 @@
       </div>
       
       <div class="question">
-        <p>2. Can you delete the read me when making a repository in git hub?</p>
+        <p>2. Can you delete the "READ ME" file when making a repository in git hub?</p>
         <div class="answers">
           <label>
             <input type="radio" name="q2" value="a">
@@ -58,29 +62,86 @@
         </div>
       </div>
       
- 
+    <div class="question">
+        <p>3. What type of malware replicates itself to spread throughout a network system?</p>
+        <div class="answers">
+          <label>
+            <input type="radio" name="q3" value="a">
+           Trjoan
+          </label>
+          <label>
+            <input type="radio" name="q3" value="b">
+            Worms
+          </label>
+          <label>
+            <input type="radio" name="q3" value="c">
+            Ransomware
+          </label>
+          <label>
+            <input type="radio" name="q3" value="d">
+            Phishing
+          </label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <p>4. What intermediary devices determine and give the best path to reach a particular network?</p>
+        <div class="answers">
+          <label>
+            <input type="radio" name="q4" value="a">
+          Routers
+          </label>
+          <label>
+            <input type="radio" name="q4" value="b">
+          Hubs
+          </label>
+          <label>
+            <input type="radio" name="q4" value="c">
+           Access Point
+          </label>
+          <label>
+            <input type="radio" name="q4" value="d">
+           Switches
+          </label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <p>5. What does the website term, "HTML" stand for?</p>
+        <div class="answers">
+          <label>
+            <input type="radio" name="q5" value="a">
+           Hyper Tax Makes Line
+          </label>
+          <label>
+            <input type="radio" name="q5" value="b">
+           Holistick Technical Method Library
+          </label>
+          <label>
+            <input type="radio" name="q5" value="c">
+            Hyper Text Markup Language
+          </label>
+          <label>
+            <input type="radio" name="q5" value="d">
+           None of the above
+          </label>
+        </div>
+      </div>
       
     </div>
+    
+    
+       
     
     <button type="submit" class="submit-btn">Submit</button>
   </form>
   
   <div class="result" id="result"></div>
-
-<script>
-  const quizForm = document.getElementById('quiz-form');
-const resultDiv = document.getElementById('result');
-const correctAnswers = ['a', 'c'];
-quizForm.addEventListener('submit', e => {
-  e.preventDefault();
   
-  let score = 0;
-  const userAnswers = [quizForm.q1.value,quizForm.q2.value];
-  userAnswers.forEach((answer, index) => {
-    if (answer === correctAnswers[index]) {
-      score += 1;
-    }
-  });
-  resultDiv.innerHTML = `Your score is ${score}/${correctAnswers.length}`;
-});
-</script>
+   <div id="container">
+   <a href="room.html">
+     <button class="button">Back to Decorative Room
+       <i class="fa fa-arrow-right" style=font-size:20px></i>
+     </button>
+   </a>
+</div>
