@@ -146,8 +146,7 @@
    </a>
 </div>
 
-</html>  
-
+<script>
 const quizForm = document.getElementById('quiz-form');
 const resultDiv = document.getElementById('result');
 const correctAnswers = ['a', 'c', 'b', 'a', 'c'];
@@ -163,3 +162,6 @@ quizForm.addEventListener('submit', e => {
   });
   resultDiv.innerHTML = `Your score is ${score}/${correctAnswers.length}`;
 });
+</script>
+  
+</html>  
