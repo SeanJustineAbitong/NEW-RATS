@@ -108,6 +108,11 @@ h3 {
   animation: glitch 5s 5s infinite;
 }
 
+.border {
+  border: 3px solid cyan;
+  height: 300px;
+}
+
 
 
 
