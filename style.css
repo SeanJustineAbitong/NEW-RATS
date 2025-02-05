@@ -113,6 +113,26 @@ h3 {
   height: 300px;
 }
 
+.h2class {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+   animation: mymove 5s;
+}
+
+  @keyframes mymove {
+  2% {opacity: 0;}
+}
+
+u {
+ font-family: Comic Sans MS;
+ font-weight: bold;
+}
+
+.dropdown-menu {
+  font-family: Roboto;
+}
+
 
 
 
