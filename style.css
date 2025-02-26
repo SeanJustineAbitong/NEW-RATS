@@ -53,6 +53,7 @@ glitch::before {
  font-weight: bold;
  background-color: black;
  color: gray;
+ margin: 15px;
  padding: 25px 50px;
 }
 
