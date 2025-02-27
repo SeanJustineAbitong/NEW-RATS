@@ -110,7 +110,7 @@ h3 {
 
 .border {
   border: 3px solid cyan;
-  height: 300px;
+  border-radius: 50px;
 }
 
 .h2class {
