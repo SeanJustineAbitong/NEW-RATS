@@ -113,6 +113,12 @@ h3 {
   border-radius: 50px;
 }
 
+.border2 {
+  border: 3px solid cyan;
+  border-radius: 50px;
+  height: 100px:
+}
+
 .h2class {
   font-size: 20px;
   text-align: center;
