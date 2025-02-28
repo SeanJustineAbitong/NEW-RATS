@@ -37,6 +37,7 @@ animation: glitch 5s 5s infinite;
   margin: auto
   padding: auto;
   border: 5px solid cyan;
+  text-align: center;
 }
 .question:nth-child(odd){
   margin-right:5%;
