@@ -6,7 +6,7 @@
  <meta name="viewport" content="width=device-width"/>
  <title>C.I.G</title>
  
-   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="CssForQuiz.css">
    <link rel="icon" type="image/x-icon" href="https://static.thenounproject.com/png/6528691-200.png">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -17,11 +17,34 @@
       <u class="h2class">Simulaion 1</u>
  </h1>
 
-  <div class="border2" id="container">
-    
-  <h2 class="h2class">Scenario:</h2>
-  <h3 class="h2class">Your local client unexpectly got into a backdoor moments as you accidentally clicked a link. As a result, a malicious hacker gains majoirty of your personal data and demands a ransom. What would you do in this situation?</h3> 
+  
+ 
+ 
+ <div class="border" id="container">  
+  <h2 class="h2class">Scenario:</h2> 
 </div>
+
+ <div class="question">
+         <p>Your local client unexpectly got into a backdoor moments as you accidentally clicked a suspicious link. As a result, a malicious hacker gains majoirty of your personal data and demands a ransom. What actions would've have prevented it before the incident happened?</p>
+        <div class="answers">
+          <label>
+            <input type="radio" name="q1" value="a">
+            Randomly clicking on concerning links to websites
+          </label>
+          <label>
+            <input type="radio" name="q1" value="b">
+            Having a proper anitvirus software installed on your device
+          </label>
+          <label>
+            <input type="radio" name="q1" value="c">
+            Sharing personal information constantly to others
+          </label>
+          <label>
+            <input type="radio" name="q1" value="d">
+            Creating a password with only lower case letters
+          </label>
+        </div>
+      </div>
  
   
  <div id="container">
@@ -39,6 +62,24 @@
      </button>
    </a>
 </div>
+
+ <script>
+const quizForm = document.getElementById('quiz-form');
+const resultDiv = document.getElementById('result');
+const correctAnswers = ['b'];
+quizForm.addEventListener('submit', e => {
+  e.preventDefault();
+  
+  let score = 0;
+  const userAnswers = [quizForm.q1.value];
+  userAnswers.forEach((answer, index) => {
+    if (answer === correctAnswers[index]) {
+      score += 1;
+    }
+  });
+  resultDiv.innerHTML = `Correct! Having programs such as installing an anitvirus software that is trustable prevents ransomware and other malware from happening.`;
+});
+</script>
  
 </body>
   
