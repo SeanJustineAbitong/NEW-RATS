@@ -133,3 +133,19 @@ glitch::before {
 #container {
   text-align: center;
 }
+
+.h2class {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+   animation: mymove 5s;
+}
+
+  @keyframes mymove {
+  2% {opacity: 0;}
+}
+
+u {
+ font-family: Comic Sans MS;
+ font-weight: bold;
+}
